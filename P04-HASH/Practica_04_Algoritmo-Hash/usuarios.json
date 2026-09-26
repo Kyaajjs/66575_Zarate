@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "usuarios": {
+    "ulises": {
+      "algoritmo": "pbkdf2-sha256",
+      "iteraciones": 600000,
+      "sal": "e724d5b13feadfc1f07c319ad60f5498",
+      "derivado": "9f5ffe7d84974ac1534ffce141480105b31ac5cc99bf0a5ca28870a78cc50aa3"
+    }
+  }
+}

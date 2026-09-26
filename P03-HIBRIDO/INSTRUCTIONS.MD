@@ -1,5 +1,9 @@
 # Seguridad Informática
-## Practica 2 – Algoritmo Hibrido RSA_AES
+## Práctica 3 – Algoritmo Híbrido RSA_AES
+
+La implementación, los comandos y la justificación técnica están en
+[README de la práctica](./-Practica-03_Algoritmo-Hibrido/README.md).
+El reporte con evidencias está en [Practica3_Hibrido_Reporte.pdf](Practica3_Hibrido_Reporte.pdf).
 
 ## Especificaciones Técnicas
 
