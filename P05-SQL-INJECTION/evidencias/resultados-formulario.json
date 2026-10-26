@@ -1,0 +1,244 @@
+[
+  {
+    "id": "01",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "12345"
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-26T19:46:50.289Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "02",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "incorrecta"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:46:51.812Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "03",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "nadie",
+      "password": "' OR '1'='1"
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-26T19:46:53.277Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "04",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=1 -- "
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-26T19:46:54.784Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "05",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=1 -- "
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-26T19:46:56.852Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "06",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=2 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:46:58.374Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "07",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "nadie",
+      "password": "' UNION SELECT 999,'demo','demo' -- "
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-26T19:46:59.878Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "08",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "'"
+    },
+    "resultado": "Error SQL",
+    "fecha": "2026-10-26T19:47:01.390Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "09",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin' -- ",
+      "password": "incorrecta"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:02.931Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "10",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR (SELECT count(*) FROM usuarios)>0 -- "
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-26T19:47:04.456Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "11",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR (SELECT count(*) FROM usuarios)<0 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:05.943Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "01",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "12345"
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-26T19:47:19.231Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "02",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "incorrecta"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:21.308Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "03",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "nadie",
+      "password": "' OR '1'='1"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:22.849Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "04",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=1 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:24.355Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "05",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=1 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:25.842Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "06",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=2 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:27.319Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "07",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "nadie",
+      "password": "' UNION SELECT 999,'demo','demo' -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:29.377Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "08",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "'"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:30.434Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "09",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin' -- ",
+      "password": "incorrecta"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:31.883Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "10",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR (SELECT count(*) FROM usuarios)>0 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:32.944Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  },
+  {
+    "id": "11",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR (SELECT count(*) FROM usuarios)<0 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-26T19:47:34.502Z",
+    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+  }
+]
