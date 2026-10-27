@@ -1,0 +1,244 @@
+[
+  {
+    "id": "01",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "12345"
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-27T00:10:39.376Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "02",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "incorrecta"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:10:51.061Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "03",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "nadie",
+      "password": "' OR '1'='1"
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-27T00:10:57.268Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "04",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=1 -- "
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-27T00:11:02.158Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "05",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=1 -- "
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-27T00:11:06.068Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "06",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=2 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:11:11.241Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "07",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "nadie",
+      "password": "' UNION SELECT 999,'demo','demo' -- "
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-27T00:11:15.742Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "08",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "'"
+    },
+    "resultado": "Error SQL",
+    "fecha": "2026-10-27T00:11:20.416Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "09",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin' -- ",
+      "password": "incorrecta"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:11:25.141Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "10",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR (SELECT count(*) FROM usuarios)>0 -- "
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-27T00:11:29.402Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "11",
+    "modo": "vulnerable",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR (SELECT count(*) FROM usuarios)<0 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:11:32.815Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "01",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "12345"
+    },
+    "resultado": "Acceso concedido",
+    "fecha": "2026-10-27T00:11:36.374Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "02",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "incorrecta"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:11:40.229Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "03",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "nadie",
+      "password": "' OR '1'='1"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:11:43.855Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "04",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=1 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:11:46.676Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "05",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=1 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:11:49.502Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "06",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR 1=2 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:11:52.909Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "07",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "nadie",
+      "password": "' UNION SELECT 999,'demo','demo' -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:11:58.522Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "08",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "'"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:12:01.684Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "09",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin' -- ",
+      "password": "incorrecta"
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:12:04.948Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "10",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR (SELECT count(*) FROM usuarios)>0 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:12:09.333Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  },
+  {
+    "id": "11",
+    "modo": "corregida",
+    "entrada": {
+      "usuario": "admin",
+      "password": "' OR (SELECT count(*) FROM usuarios)<0 -- "
+    },
+    "resultado": "Acceso denegado",
+    "fecha": "2026-10-27T00:12:14.601Z",
+    "metodo": "Formulario real y captura con respuesta visible"
+  }
+]
