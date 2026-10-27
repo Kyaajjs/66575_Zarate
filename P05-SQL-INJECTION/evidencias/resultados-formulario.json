@@ -7,8 +7,8 @@
       "password": "12345"
     },
     "resultado": "Acceso concedido",
-    "fecha": "2026-10-26T19:46:50.289Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:10:39.376Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "02",
@@ -18,8 +18,8 @@
       "password": "incorrecta"
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:46:51.812Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:10:51.061Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "03",
@@ -29,8 +29,8 @@
       "password": "' OR '1'='1"
     },
     "resultado": "Acceso concedido",
-    "fecha": "2026-10-26T19:46:53.277Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:10:57.268Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "04",
@@ -40,8 +40,8 @@
       "password": "' OR 1=1 -- "
     },
     "resultado": "Acceso concedido",
-    "fecha": "2026-10-26T19:46:54.784Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:02.158Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "05",
@@ -51,8 +51,8 @@
       "password": "' OR 1=1 -- "
     },
     "resultado": "Acceso concedido",
-    "fecha": "2026-10-26T19:46:56.852Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:06.068Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "06",
@@ -62,8 +62,8 @@
       "password": "' OR 1=2 -- "
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:46:58.374Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:11.241Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "07",
@@ -73,8 +73,8 @@
       "password": "' UNION SELECT 999,'demo','demo' -- "
     },
     "resultado": "Acceso concedido",
-    "fecha": "2026-10-26T19:46:59.878Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:15.742Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "08",
@@ -84,8 +84,8 @@
       "password": "'"
     },
     "resultado": "Error SQL",
-    "fecha": "2026-10-26T19:47:01.390Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:20.416Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "09",
@@ -95,8 +95,8 @@
       "password": "incorrecta"
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:02.931Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:25.141Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "10",
@@ -106,8 +106,8 @@
       "password": "' OR (SELECT count(*) FROM usuarios)>0 -- "
     },
     "resultado": "Acceso concedido",
-    "fecha": "2026-10-26T19:47:04.456Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:29.402Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "11",
@@ -117,8 +117,8 @@
       "password": "' OR (SELECT count(*) FROM usuarios)<0 -- "
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:05.943Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:32.815Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "01",
@@ -128,8 +128,8 @@
       "password": "12345"
     },
     "resultado": "Acceso concedido",
-    "fecha": "2026-10-26T19:47:19.231Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:36.374Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "02",
@@ -139,8 +139,8 @@
       "password": "incorrecta"
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:21.308Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:40.229Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "03",
@@ -150,8 +150,8 @@
       "password": "' OR '1'='1"
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:22.849Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:43.855Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "04",
@@ -161,8 +161,8 @@
       "password": "' OR 1=1 -- "
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:24.355Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:46.676Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "05",
@@ -172,8 +172,8 @@
       "password": "' OR 1=1 -- "
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:25.842Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:49.502Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "06",
@@ -183,8 +183,8 @@
       "password": "' OR 1=2 -- "
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:27.319Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:52.909Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "07",
@@ -194,8 +194,8 @@
       "password": "' UNION SELECT 999,'demo','demo' -- "
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:29.377Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:11:58.522Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "08",
@@ -205,8 +205,8 @@
       "password": "'"
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:30.434Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:12:01.684Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "09",
@@ -216,8 +216,8 @@
       "password": "incorrecta"
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:31.883Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:12:04.948Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "10",
@@ -227,8 +227,8 @@
       "password": "' OR (SELECT count(*) FROM usuarios)>0 -- "
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:32.944Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:12:09.333Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   },
   {
     "id": "11",
@@ -238,7 +238,7 @@
       "password": "' OR (SELECT count(*) FROM usuarios)<0 -- "
     },
     "resultado": "Acceso denegado",
-    "fecha": "2026-10-26T19:47:34.502Z",
-    "metodo": "Formulario real: rellenar campos y pulsar Ingresar"
+    "fecha": "2026-10-27T00:12:14.601Z",
+    "metodo": "Formulario real y captura con respuesta visible"
   }
 ]

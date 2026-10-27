@@ -23,3 +23,7 @@ Con el servidor anterior detenido, ejecutar `npm test`. El test arranca el servi
 En `evidencias/` se incluyen capturas del formulario antes y después, y el registro de las 22 ejecuciones de navegador. Las contraseñas del registro son exclusivamente datos ficticios o payloads de prueba. El campo contraseña se oculta en las capturas de la versión segura.
 
 El login demuestra la verificación de credenciales. No implementa una sesión ni autorización de recursos y no se presenta como un sistema de autenticación listo para producción.
+
+## Reporte académico
+
+[Descargar PDF de Ulises Zarate Concha](2doParcial_SQL_Injection_Ulises_Zarate.pdf). Incluye 19 páginas, las 22 capturas del formulario, explicación de los payloads, corrección y enlace al PR #1.

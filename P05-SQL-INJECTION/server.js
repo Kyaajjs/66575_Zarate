@@ -1,4 +1,3 @@
-
 const express = require("express");
 const sqlite3 = require("sqlite3").verbose();
 const path = require("path");
@@ -63,4 +62,3 @@ app.post("/login", (req, res) => {
 app.listen(3102, "127.0.0.1", () => {
   console.log("Servidor: http://127.0.0.1:3102");
 });
-    
